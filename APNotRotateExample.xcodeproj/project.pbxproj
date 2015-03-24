@@ -15,6 +15,9 @@
 		E9331AD41AC16AF50026AF74 /* APNotRotateExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331AD31AC16AF50026AF74 /* APNotRotateExampleTests.m */; };
 		E9331ADF1AC16B290026AF74 /* APCanRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331ADE1AC16B290026AF74 /* APCanRotateViewController.m */; };
 		E9331AE21AC16B380026AF74 /* APCannotRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331AE11AC16B380026AF74 /* APCannotRotateViewController.m */; };
+		E975F7C51AC171C8001C538C /* APCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E975F7C41AC171C8001C538C /* APCollectionViewController.m */; };
+		E975F7C81AC1749A001C538C /* APFirstNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E975F7C71AC1749A001C538C /* APFirstNavigationController.m */; };
+		E975F7CB1AC174AB001C538C /* APSecondNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E975F7CA1AC174AB001C538C /* APSecondNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		E9331ADE1AC16B290026AF74 /* APCanRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCanRotateViewController.m; sourceTree = "<group>"; };
 		E9331AE01AC16B380026AF74 /* APCannotRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCannotRotateViewController.h; sourceTree = "<group>"; };
 		E9331AE11AC16B380026AF74 /* APCannotRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCannotRotateViewController.m; sourceTree = "<group>"; };
+		E975F7C31AC171C8001C538C /* APCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCollectionViewController.h; sourceTree = "<group>"; };
+		E975F7C41AC171C8001C538C /* APCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCollectionViewController.m; sourceTree = "<group>"; };
+		E975F7C61AC1749A001C538C /* APFirstNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APFirstNavigationController.h; sourceTree = "<group>"; };
+		E975F7C71AC1749A001C538C /* APFirstNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APFirstNavigationController.m; sourceTree = "<group>"; };
+		E975F7C91AC174AB001C538C /* APSecondNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSecondNavigationController.h; sourceTree = "<group>"; };
+		E975F7CA1AC174AB001C538C /* APSecondNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSecondNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,12 @@
 				E9331ADE1AC16B290026AF74 /* APCanRotateViewController.m */,
 				E9331AE01AC16B380026AF74 /* APCannotRotateViewController.h */,
 				E9331AE11AC16B380026AF74 /* APCannotRotateViewController.m */,
+				E975F7C31AC171C8001C538C /* APCollectionViewController.h */,
+				E975F7C41AC171C8001C538C /* APCollectionViewController.m */,
+				E975F7C61AC1749A001C538C /* APFirstNavigationController.h */,
+				E975F7C71AC1749A001C538C /* APFirstNavigationController.m */,
+				E975F7C91AC174AB001C538C /* APSecondNavigationController.h */,
+				E975F7CA1AC174AB001C538C /* APSecondNavigationController.m */,
 				E9331AC11AC16AF50026AF74 /* Main.storyboard */,
 				E9331AC41AC16AF50026AF74 /* Images.xcassets */,
 				E9331AC61AC16AF50026AF74 /* LaunchScreen.xib */,
@@ -226,8 +241,11 @@
 			files = (
 				E9331ABD1AC16AF50026AF74 /* AppDelegate.m in Sources */,
 				E9331ABA1AC16AF50026AF74 /* main.m in Sources */,
+				E975F7CB1AC174AB001C538C /* APSecondNavigationController.m in Sources */,
+				E975F7C51AC171C8001C538C /* APCollectionViewController.m in Sources */,
 				E9331ADF1AC16B290026AF74 /* APCanRotateViewController.m in Sources */,
 				E9331AE21AC16B380026AF74 /* APCannotRotateViewController.m in Sources */,
+				E975F7C81AC1749A001C538C /* APFirstNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +436,7 @@
 				E9331AD91AC16AF50026AF74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9331ADA1AC16AF50026AF74 /* Build configuration list for PBXNativeTarget "APNotRotateExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				E9331ADC1AC16AF50026AF74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

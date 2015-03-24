@@ -14,12 +14,8 @@
 
 @implementation APCannotRotateViewController
 
-- (NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (BOOL)shouldAutorotate {
-    return NO;
+- (IBAction)dismissButtonPressed:(id)sender {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
