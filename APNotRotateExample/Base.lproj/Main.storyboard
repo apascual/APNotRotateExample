@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="28" y="660"/>
         </scene>
-        <!--This VC can rotate-->
+        <!--This VC can't rotate-->
         <scene sceneID="CFo-FG-0zT">
             <objects>
                 <collectionViewController id="Obr-Sn-wvs" customClass="APCollectionViewController" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             <outlet property="delegate" destination="Obr-Sn-wvs" id="Pxq-Cl-N5l"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="This VC can rotate" id="wzA-4j-tvC"/>
+                    <navigationItem key="navigationItem" title="This VC can't rotate" id="wzA-4j-tvC"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMB-uB-wgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +74,7 @@
             </objects>
             <point key="canvasLocation" x="1416" y="660"/>
         </scene>
-        <!--This VC can't rotate-->
+        <!--This VC can rotate-->
         <scene sceneID="XNQ-ld-6ki">
             <objects>
                 <viewController id="Wdg-Mg-7GK" customClass="APCannotRotateViewController" sceneMemberID="viewController">
@@ -118,7 +118,7 @@
                             <constraint firstAttribute="centerX" secondItem="MnO-yb-yx0" secondAttribute="centerX" constant="-0.5" id="kgo-Ha-cLi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="This VC can't rotate" id="nJA-cA-Pue"/>
+                    <navigationItem key="navigationItem" title="This VC can rotate" id="nJA-cA-Pue"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nod-nb-dnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
