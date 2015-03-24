@@ -86,17 +86,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This UIViewController won't rotate, no matter what is the device orientation..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnO-yb-yx0">
-                                <rect key="frame" x="172" y="127" width="257" height="115"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="257" id="gLK-Uv-rsr"/>
-                                    <constraint firstAttribute="height" constant="115" id="zFA-FB-e5l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzn-kR-KAE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzn-kR-KAE">
                                 <rect key="frame" x="273" y="285" width="54" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="PqP-3f-v0h"/>
@@ -109,14 +99,32 @@
                                     <action selector="dismissButtonPressed:" destination="Wdg-Mg-7GK" eventType="touchUpInside" id="JHJ-ez-i1G"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This UIViewController will rotate depending on the device orientation..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnO-yb-yx0">
+                                <rect key="frame" x="175" y="171" width="250" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="3go-jX-0PG"/>
+                                    <constraint firstAttribute="width" constant="250" id="A9v-6v-4Jh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MnO-yb-yx0" firstAttribute="top" secondItem="ulu-dv-33m" secondAttribute="bottom" constant="107" id="GLH-ZS-zb8"/>
+                            <constraint firstAttribute="centerX" secondItem="MnO-yb-yx0" secondAttribute="centerX" id="8rw-8r-sJr"/>
+                            <constraint firstItem="MnO-yb-yx0" firstAttribute="top" secondItem="ulu-dv-33m" secondAttribute="bottom" constant="107" id="BUM-sM-3SG"/>
                             <constraint firstAttribute="centerX" secondItem="lzn-kR-KAE" secondAttribute="centerX" id="KGN-jn-Hq2"/>
+                            <constraint firstItem="lzn-kR-KAE" firstAttribute="top" secondItem="ulu-dv-33m" secondAttribute="bottom" constant="221" id="bOh-YE-oGE"/>
                             <constraint firstItem="lzn-kR-KAE" firstAttribute="top" secondItem="MnO-yb-yx0" secondAttribute="bottom" constant="43" id="iHL-RB-7mQ"/>
                             <constraint firstAttribute="centerX" secondItem="MnO-yb-yx0" secondAttribute="centerX" constant="-0.5" id="kgo-Ha-cLi"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kgo-Ha-cLi"/>
+                                <exclude reference="iHL-RB-7mQ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="This VC can rotate" id="nJA-cA-Pue"/>
                 </viewController>
