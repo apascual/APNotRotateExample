@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		E9331ABA1AC16AF50026AF74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331AB91AC16AF50026AF74 /* main.m */; };
 		E9331ABD1AC16AF50026AF74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331ABC1AC16AF50026AF74 /* AppDelegate.m */; };
-		E9331AC01AC16AF50026AF74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331ABF1AC16AF50026AF74 /* ViewController.m */; };
 		E9331AC31AC16AF50026AF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9331AC11AC16AF50026AF74 /* Main.storyboard */; };
 		E9331AC51AC16AF50026AF74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9331AC41AC16AF50026AF74 /* Images.xcassets */; };
 		E9331AC81AC16AF50026AF74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9331AC61AC16AF50026AF74 /* LaunchScreen.xib */; };
 		E9331AD41AC16AF50026AF74 /* APNotRotateExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331AD31AC16AF50026AF74 /* APNotRotateExampleTests.m */; };
+		E9331ADF1AC16B290026AF74 /* APCanRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331ADE1AC16B290026AF74 /* APCanRotateViewController.m */; };
+		E9331AE21AC16B380026AF74 /* APCannotRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9331AE11AC16B380026AF74 /* APCannotRotateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		E9331AB91AC16AF50026AF74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9331ABB1AC16AF50026AF74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9331ABC1AC16AF50026AF74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E9331ABE1AC16AF50026AF74 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E9331ABF1AC16AF50026AF74 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E9331AC21AC16AF50026AF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9331AC41AC16AF50026AF74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9331AC71AC16AF50026AF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E9331ACD1AC16AF50026AF74 /* APNotRotateExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNotRotateExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9331AD21AC16AF50026AF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9331AD31AC16AF50026AF74 /* APNotRotateExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APNotRotateExampleTests.m; sourceTree = "<group>"; };
+		E9331ADD1AC16B290026AF74 /* APCanRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCanRotateViewController.h; sourceTree = "<group>"; };
+		E9331ADE1AC16B290026AF74 /* APCanRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCanRotateViewController.m; sourceTree = "<group>"; };
+		E9331AE01AC16B380026AF74 /* APCannotRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCannotRotateViewController.h; sourceTree = "<group>"; };
+		E9331AE11AC16B380026AF74 /* APCannotRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCannotRotateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,10 @@
 			children = (
 				E9331ABB1AC16AF50026AF74 /* AppDelegate.h */,
 				E9331ABC1AC16AF50026AF74 /* AppDelegate.m */,
-				E9331ABE1AC16AF50026AF74 /* ViewController.h */,
-				E9331ABF1AC16AF50026AF74 /* ViewController.m */,
+				E9331ADD1AC16B290026AF74 /* APCanRotateViewController.h */,
+				E9331ADE1AC16B290026AF74 /* APCanRotateViewController.m */,
+				E9331AE01AC16B380026AF74 /* APCannotRotateViewController.h */,
+				E9331AE11AC16B380026AF74 /* APCannotRotateViewController.m */,
 				E9331AC11AC16AF50026AF74 /* Main.storyboard */,
 				E9331AC41AC16AF50026AF74 /* Images.xcassets */,
 				E9331AC61AC16AF50026AF74 /* LaunchScreen.xib */,
@@ -219,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9331AC01AC16AF50026AF74 /* ViewController.m in Sources */,
 				E9331ABD1AC16AF50026AF74 /* AppDelegate.m in Sources */,
 				E9331ABA1AC16AF50026AF74 /* main.m in Sources */,
+				E9331ADF1AC16B290026AF74 /* APCanRotateViewController.m in Sources */,
+				E9331AE21AC16B380026AF74 /* APCannotRotateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

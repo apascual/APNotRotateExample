@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  APCanRotateViewController.h
 //  APNotRotateExample
 //
 //  Created by Abel Pascual on 24/03/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface APCanRotateViewController : UIViewController
 
 @end
-
